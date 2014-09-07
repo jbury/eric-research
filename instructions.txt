@@ -1,0 +1,8 @@
+Get the number of frames
+Divide by 30
+Round down
+Find the distance between consecutive steps
+Find the distance between every two steps
+Use the cosine rule arcos((leg1^2+leg2^2-hypot^2)/(2*leg1*leg2))
+Convert distances between consecutive steps to mm/min (*60/12.2)
+Count the number of times <25mm/min
