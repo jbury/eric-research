@@ -27,7 +27,8 @@ with open(Default, 'r') as f:
     steps = []
 
     for row in myReader:
-        if(int(row[0]) % stepSize == 0):
+        if((int(row[0])) % stepSize == 0):
+            print(int(row[0]))
             steps.append((float(row[1]), float(row[2])))
 
     print(len(steps))
