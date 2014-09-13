@@ -5,7 +5,7 @@ import math
 print ("the number of arguments: ", len(sys.argv))
 print ("The arguments are: ", str(sys.argv))
 
-Default = 'C:\\\\Users\\\\Eric\\\\Desktop\\\\buttsauce\\\\data.csv'
+Default = 'C:\\\\Users\\\\Eric\\\\Desktop\\\\eric-research\\\\data.csv'
 
 videoLengthSeconds = int(input("Enter the length of the video in seconds: "))
 if(len(sys.argv) == 2):
@@ -23,11 +23,11 @@ with open(Default, 'r') as f:
     frameCount = fileSize - 1
 
     stepSize = int(math.floor(frameCount / videoLengthSeconds))
-
+    print('Step size is: ', stepSize)
     steps = []
 
     for row in myReader:
-        if((int(row[0])) % stepSize == 0):
+        if((int(row[0])-1) % stepSize == 0):
             print(int(row[0]))
             steps.append((float(row[1]), float(row[2])))
 
