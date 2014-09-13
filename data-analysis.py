@@ -5,7 +5,7 @@ import math
 print ("the number of arguments: ", len(sys.argv))
 print ("The arguments are: ", str(sys.argv))
 
-Default = 'C:\\\\Users\\\\Eric\\\\Desktop\\\\eric-research\\\\data.csv'
+Default = 'C:\\\\Users\\\\Eric\\\\Desktop\\\\eric-research\\\\30sec.csv'
 
 videoLengthSeconds = int(input("Enter the length of the video in seconds: "))
 if(len(sys.argv) == 2):
@@ -33,4 +33,12 @@ with open(Default, 'r') as f:
 
     print(len(steps))
     print(steps[0])
+
+
+
 x = input("YAY")
+
+
+
+def cosineRule(leg1, leg2, hypot):
+    return math.acos((leg1**2 + leg2**2 - hypot**2)/(2*leg1*leg2))
