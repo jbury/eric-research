@@ -1,1 +1,0 @@
-I need to run may code aginst the given data in the xl documents and then see what is corect
